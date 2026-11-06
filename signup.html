@@ -100,7 +100,7 @@
 <script>
   // Totals only: the published "Public" tab of the sign-up sheet, as CSV (label,number per row).
   // Empty until that tab is published; the Current interest panel stays hidden until then.
-  var PUBLIC_CSV_URL = '';
+  var PUBLIC_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRv4nk_un5gMQN-eISj42c9vfUUuW6WoIiG1TA1cmtw0ygriMmahCtRQGFcgXqAbOW8DHXGL2_aicbH/pub?gid=181432320&single=true&output=csv';
 
   function parseCsv(text){
     return text.trim().split(/\r?\n/).map(function(line){
@@ -112,7 +112,9 @@
   if (PUBLIC_CSV_URL) {
     fetch(PUBLIC_CSV_URL).then(function(r){ return r.ok ? r.text() : ''; }).then(function(text){
       var rows = parseCsv(text);
-      if (!rows.length) return;
+      // Shown once there is at least one sign-up (the first row is the total).
+      if (!rows.length || Number(rows[0][1]) < 1) return;
+      rows = rows.filter(function(r){ return Number(r[1]) > 0 || r === rows[0]; });
       var box = document.getElementById('stats');
       rows.forEach(function(row){
         var d = document.createElement('div'); d.className = 'stat';
