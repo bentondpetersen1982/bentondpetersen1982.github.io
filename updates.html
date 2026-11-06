@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Updates · Persistent Story Engine</title>
+<meta name="description" content="News from the building of Persistent Story Engine: what's new, what's next, and when you can play.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#121922;--panel:#1E2833;--paper:#F3EEE3;--card:#FBF8F2;--gold:#C9A04F;--gold-dk:#7A5C1C;--muted:#C9D2DC;--grey:#4A5260;--line:#E1D8C6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:#1E2530;font-family:'IBM Plex Sans',Arial,sans-serif;font-size:18px;line-height:1.65}
+  h1,h2,h3{font-family:'EB Garamond',Georgia,serif;font-weight:600;line-height:1.15}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  .eyebrow{font-size:14px;letter-spacing:3px;text-transform:uppercase;font-weight:600}
+  .top{background:var(--ink);padding:18px 0}
+  .top .wrap{max-width:1040px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .top a{color:var(--gold);text-decoration:none;font-weight:600}
+  header.page{background:radial-gradient(ellipse at 30% 40%,#1C2633,var(--ink));color:var(--paper);padding:56px 0 64px}
+  header.page .eyebrow{color:var(--gold)}
+  header.page h1{font-size:clamp(36px,6vw,56px);margin:14px 0 16px}
+  header.page p{color:var(--muted)}
+  main{padding:56px 0 72px}
+  article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px;margin-bottom:28px}
+  article time{font-size:14px;letter-spacing:2px;text-transform:uppercase;font-weight:600;color:var(--gold-dk)}
+  article h2{font-size:clamp(28px,4.5vw,36px);margin:8px 0 16px}
+  article p{color:#2C3440;margin-bottom:14px}
+  article a{color:var(--gold-dk);font-weight:600}
+  .cta{display:inline-block;margin-top:6px;padding:12px 22px;border:1px solid var(--gold-dk);border-radius:8px;color:var(--gold-dk);text-decoration:none;font-weight:600}
+  .cta:hover{background:var(--gold-dk);color:var(--paper)}
+  .join{background:var(--panel);color:var(--paper);border-radius:14px;padding:32px;text-align:center}
+  .join h2{font-size:32px;margin-bottom:10px}
+  .join p{color:var(--muted);margin-bottom:6px}
+  .join .cta{border-color:var(--gold);color:var(--gold);margin-top:14px}
+  .join .cta:hover{background:var(--gold);color:var(--ink)}
+  footer{background:var(--ink);color:var(--muted);padding:48px 0;text-align:center}
+  footer a{color:var(--gold)}
+  @media (max-width:600px){article,.join{padding:24px}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap"><a href="index.html">← Persistent Story Engine</a><a href="signup.html">Sign up for the alpha</a></div></div>
+
+<header class="page">
+  <div class="wrap">
+    <p class="eyebrow">Updates</p>
+    <h1>News from the build</h1>
+    <p>What’s new, what’s next, and when you can play. Newest first.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <!-- NEW POSTS GO HERE, newest first: copy one <article> block, change the date, title and text. -->
+
+    <article id="2026-11-06-alpha-signup">
+      <time datetime="2026-11-06">6 November 2026</time>
+      <h2>The alpha sign-up is open</h2>
+      <p>You can now put your name down to play Persistent Story Engine first.</p>
+      <p>It will open in two stages. First comes a <strong>closed alpha</strong> of a few hundred players: earlier, rougher, and the place where your play and your notes decide what gets fixed and built next. After that comes a <strong>larger beta</strong> of a few thousand players, more polished, and where we make sure the platform holds up when lots of people play at once.</p>
+      <p>Signing up takes a minute: an email, what kinds of stories you’d play, and which stage you’d like to join. Authors can also tell us if they’d like to bring a world of their own. Everyone on the list hears first when each stage opens. Dates are planned, not promised, and we’ll post them here as they firm up.</p>
+      <a class="cta" href="signup.html">Sign up for the alpha and beta</a>
+    </article>
+
+    <article id="2026-11-05-demo-reel">
+      <time datetime="2026-11-05">5 November 2026</time>
+      <h2>The demo reel is out: one world, three stories</h2>
+      <p>The first demo reel is up on the <a href="index.html#demo">home page</a>. A traveller walks into a village inn, asks for a room and a hot meal, pays, and waits for what was promised. We played it three times, typing exactly the same words each time, and got three different stories.</p>
+      <p>What stays the same is the truth of the world. Every coin paid and every bit of change, every deal, every key handed over and every promise made is kept by the engine, not by the AI. The people change how they talk and who brings your supper up the stairs, but nobody can talk their way around what actually happened. When the traveller claims to find a bag of gold under a table, the story finds only dust.</p>
+      <p>It was recorded live on the free AI tier; the waits between turns were trimmed, nothing else. The engine behind it was started on 9 September and is held together by about 1,300 tests.</p>
+      <a class="cta" href="index.html#demo">Watch the reel</a>
+    </article>
+
+    <div class="join">
+      <h2>Want to play it first?</h2>
+      <p>A closed alpha comes first, then a larger beta.</p>
+      <a class="cta" href="signup.html">Sign up</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Persistent Story Engine · <a href="mailto:persistentstoryengine@gmail.com">persistentstoryengine@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
