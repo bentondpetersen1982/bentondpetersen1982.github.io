@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign up · Persistent Story Engine</title>
+<meta name="description" content="Sign up to play Persistent Story Engine first: a closed alpha of a few hundred players, then a larger beta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#121922;--panel:#1E2833;--paper:#F3EEE3;--card:#FBF8F2;--gold:#C9A04F;--gold-dk:#7A5C1C;--muted:#C9D2DC;--grey:#4A5260;--line:#E1D8C6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:#1E2530;font-family:'IBM Plex Sans',Arial,sans-serif;font-size:18px;line-height:1.6}
+  h1,h2,h3{font-family:'EB Garamond',Georgia,serif;font-weight:600;line-height:1.1}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  .eyebrow{font-size:14px;letter-spacing:3px;text-transform:uppercase;font-weight:600}
+  .top{background:var(--ink);color:var(--paper);padding:18px 0}
+  .top a{color:var(--gold);text-decoration:none;font-weight:600}
+  header.page{background:radial-gradient(ellipse at 30% 40%,#1C2633,var(--ink));color:var(--paper);padding:56px 0 64px}
+  header.page .eyebrow{color:var(--gold)}
+  header.page h1{font-size:clamp(36px,6vw,56px);margin:14px 0 18px}
+  header.page h1 span{color:var(--gold)}
+  header.page p{color:var(--muted);max-width:760px}
+  section{padding:64px 0}
+  section h2{font-size:clamp(28px,4.5vw,40px);margin:10px 0 24px}
+  section .eyebrow{color:var(--gold-dk)}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px}
+  .card h3{font-size:28px;margin-bottom:10px}
+  .card p{color:var(--grey)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+  .stat{background:var(--panel);color:var(--paper);border-radius:14px;padding:24px}
+  .stat .num{font-family:'EB Garamond',Georgia,serif;font-size:48px;font-weight:600;color:var(--gold);line-height:1}
+  .stat .label{margin-top:8px;color:var(--muted);font-size:16px}
+  .note{margin-top:14px;color:var(--grey);font-size:15px}
+  .form-box{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .form-box iframe{display:block;width:100%;height:1900px;border:0}
+  .privacy{margin-top:16px;color:var(--grey);font-size:15px}
+  .privacy a,.note a{color:var(--gold-dk);font-weight:600}
+  footer{background:var(--ink);color:var(--muted);padding:48px 0;text-align:center}
+  footer a{color:var(--gold)}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}section{padding:48px 0}.form-box iframe{height:2300px}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap"><a href="index.html">← Persistent Story Engine</a></div></div>
+
+<header class="page">
+  <div class="wrap">
+    <p class="eyebrow">Play it first</p>
+    <h1>Sign up for the <span>alpha and beta</span></h1>
+    <p>Be among the first to play stories where the world remembers: people with their own lives, deals and promises that are kept, and a story that can run for weeks.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <h3>Closed alpha</h3>
+        <p>A few hundred players, earlier and rougher. Your play and your notes shape what gets fixed and built next.</p>
+      </div>
+      <div class="card">
+        <h3>Larger beta</h3>
+        <p>A few thousand players, later and more polished. It is also where we make sure the platform holds up under real use.</p>
+      </div>
+    </div>
+    <p class="note">Dates are planned, not promised. Everyone who signs up hears first when either one opens.</p>
+  </div>
+</section>
+
+<section id="interest" hidden style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Current interest</p>
+    <h2>Who has signed up so far</h2>
+    <div class="stats" id="stats"></div>
+    <p class="note">Totals only, updated as people sign up. No names or emails are ever shown.</p>
+  </div>
+</section>
+
+<section id="form" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Sign up</p>
+    <h2>Add your name to the list</h2>
+    <div class="form-box">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNlrx8UOwiwGz_wjOxniw79JHz_QCzsyaDHitj2f_EGTq5sQ/viewform?embedded=true" title="PSE alpha and beta sign-up form" loading="lazy">Loading…</iframe>
+    </div>
+    <p class="privacy">Your email is used only to tell you about PSE’s alpha and beta. It is never shared or sold, and you can unsubscribe at any time. Form not showing? <a href="https://docs.google.com/forms/d/e/1FAIpQLScNlrx8UOwiwGz_wjOxniw79JHz_QCzsyaDHitj2f_EGTq5sQ/viewform" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Persistent Story Engine · <a href="mailto:persistentstoryengine@gmail.com">persistentstoryengine@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+  // Totals only: the published "Public" tab of the sign-up sheet, as CSV (label,number per row).
+  // Empty until that tab is published; the Current interest panel stays hidden until then.
+  var PUBLIC_CSV_URL = '';
+
+  function parseCsv(text){
+    return text.trim().split(/\r?\n/).map(function(line){
+      var m = line.match(/^"?(.*?)"?,\s*"?([^"]*)"?$/);
+      return m ? [m[1], m[2]] : null;
+    }).filter(function(r){ return r && r[0] && /^\d+$/.test(r[1]); });
+  }
+
+  if (PUBLIC_CSV_URL) {
+    fetch(PUBLIC_CSV_URL).then(function(r){ return r.ok ? r.text() : ''; }).then(function(text){
+      var rows = parseCsv(text);
+      if (!rows.length) return;
+      var box = document.getElementById('stats');
+      rows.forEach(function(row){
+        var d = document.createElement('div'); d.className = 'stat';
+        var n = document.createElement('div'); n.className = 'num'; n.textContent = Number(row[1]).toLocaleString();
+        var l = document.createElement('div'); l.className = 'label'; l.textContent = row[0];
+        d.appendChild(n); d.appendChild(l); box.appendChild(d);
+      });
+      document.getElementById('interest').hidden = false;
+    }).catch(function(){});
+  }
+</script>
+</body>
+</html>
