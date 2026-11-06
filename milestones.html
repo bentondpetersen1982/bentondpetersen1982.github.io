@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milestones · Persistent Story Engine</title>
+<meta name="description" content="Where Persistent Story Engine is: what's done, what's next on the way to the alpha and beta, and how to support it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#121922;--panel:#1E2833;--paper:#F3EEE3;--card:#FBF8F2;--gold:#C9A04F;--gold-dk:#7A5C1C;--muted:#C9D2DC;--grey:#4A5260;--line:#E1D8C6;--done:#2E7D5B}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:#1E2530;font-family:'IBM Plex Sans',Arial,sans-serif;font-size:18px;line-height:1.6}
+  h1,h2,h3{font-family:'EB Garamond',Georgia,serif;font-weight:600;line-height:1.15}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  .eyebrow{font-size:14px;letter-spacing:3px;text-transform:uppercase;font-weight:600}
+  .top{background:var(--ink);padding:18px 0}
+  .top .wrap{max-width:1040px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .top nav{display:flex;gap:20px;flex-wrap:wrap}
+  .top a{color:var(--gold);text-decoration:none;font-weight:600}
+  header.page{background:radial-gradient(ellipse at 30% 40%,#1C2633,var(--ink));color:var(--paper);padding:56px 0 64px}
+  header.page .eyebrow{color:var(--gold)}
+  header.page h1{font-size:clamp(36px,6vw,56px);margin:14px 0 16px}
+  header.page p{color:var(--muted);max-width:680px}
+  section{padding:64px 0}
+  section h2{font-size:clamp(28px,4.5vw,40px);margin:10px 0 28px}
+  section .eyebrow{color:var(--gold-dk)}
+  /* Milestone track: a vertical line of steps */
+  .track{list-style:none;position:relative;padding-left:40px}
+  .track::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:var(--line)}
+  .step{position:relative;margin-bottom:22px}
+  .step::before{content:"";position:absolute;left:-36px;top:22px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid #B8AD97}
+  .step.done::before{background:var(--done);border-color:var(--done)}
+  .step.next::before{background:var(--gold);border-color:var(--gold)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px}
+  .step.later .box{border-style:dashed;border-color:#B8AD97;background:transparent}
+  .tag{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600;color:var(--grey);margin-bottom:4px}
+  .step.done .tag{color:var(--done)}
+  .step.next .tag{color:var(--gold-dk)}
+  .box h3{font-size:26px;margin-bottom:6px}
+  .box p{color:var(--grey)}
+  .note{margin-top:8px;color:var(--grey);font-size:15px}
+  .dark{background:var(--panel);color:var(--paper)}
+  .dark .eyebrow{color:var(--gold)}
+  .dark p{color:var(--muted)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .panel{border:1px solid #33404d;border-radius:14px;padding:28px}
+  .panel h3{font-size:30px;margin-bottom:10px;color:var(--paper)}
+  .soon{display:inline-block;margin-top:18px;padding:12px 22px;border:1px dashed #6A7584;border-radius:8px;color:#8F9AA6;font-weight:600}
+  .btn{display:inline-block;margin-top:18px;padding:12px 22px;border:1px solid var(--gold);border-radius:8px;color:var(--gold);text-decoration:none;font-weight:600}
+  .btn:hover{background:var(--gold);color:var(--ink)}
+  .panel a.link{color:var(--gold)}
+  footer{background:var(--ink);color:var(--muted);padding:48px 0;text-align:center}
+  footer a{color:var(--gold)}
+  @media (max-width:720px){.two{grid-template-columns:1fr}section{padding:48px 0}.box{padding:20px}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap"><a href="index.html">← Persistent Story Engine</a><nav><a href="updates.html">Updates</a><a href="signup.html">Sign up</a></nav></div></div>
+
+<header class="page">
+  <div class="wrap">
+    <p class="eyebrow">Milestones</p>
+    <h1>Where PSE is, and where it’s going</h1>
+    <p>Each step below is a working part of the engine or the platform, not a promise on a calendar. Finished steps are marked as they land, and each one gets a post on the <a href="updates.html" style="color:var(--gold)">Updates</a> page.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The road to the alpha and beta</p>
+    <h2>Milestones</h2>
+    <!-- To update: change a step's class (done / next / later) and its tag text. -->
+    <ol class="track">
+      <li class="step done"><div class="box">
+        <span class="tag">Done · Sep–Nov 2026</span>
+        <h3>The engine and its rules</h3>
+        <p>The engine holds the world’s truth: people, places, things, money, time, deals and promises. The AI tells the story but cannot change what’s true. Started 9 September, about 1,300 tests.</p>
+      </div></li>
+      <li class="step done"><div class="box">
+        <span class="tag">Done · 5 Nov 2026</span>
+        <h3>The demo reel</h3>
+        <p>One world, the same words typed three times, three different stories, with every coin and promise kept. <a href="index.html#demo" style="color:var(--gold-dk);font-weight:600">Watch it</a>.</p>
+      </div></li>
+      <li class="step done"><div class="box">
+        <span class="tag">Done · 6 Nov 2026</span>
+        <h3>Alpha and beta sign-up open</h3>
+        <p>Anyone can put their name down to play first. <a href="signup.html" style="color:var(--gold-dk);font-weight:600">Sign up</a>.</p>
+      </div></li>
+      <li class="step next"><div class="box">
+        <span class="tag">Up next</span>
+        <h3>Long play: stories with no length limit</h3>
+        <p>Characters who remember you and change through what happens, over days and weeks of play, while the cost of each turn stays flat however long the story runs.</p>
+      </div></li>
+      <li class="step"><div class="box">
+        <span class="tag">Then</span>
+        <h3>Your character, your skills</h3>
+        <p>Create your own character, with traits and skills that grow through play. Outcomes judged by skill and pressure rather than dice, where tactics like surprise or bad footing matter in any setting.</p>
+      </div></li>
+      <li class="step"><div class="box">
+        <span class="tag">Then</span>
+        <h3>The platform online</h3>
+        <p>Play in the browser with an account, no install. An outside security review before anyone outside the team plays.</p>
+      </div></li>
+      <li class="step"><div class="box">
+        <span class="tag">Then</span>
+        <h3>Closed alpha</h3>
+        <p>A few hundred players from the sign-up list. Earlier and rougher; your play and notes decide what gets fixed next.</p>
+      </div></li>
+      <li class="step"><div class="box">
+        <span class="tag">Then</span>
+        <h3>Larger beta</h3>
+        <p>A few thousand players, more polished, and proof the platform holds up when lots of people play at once.</p>
+      </div></li>
+      <li class="step later"><div class="box">
+        <span class="tag">Later</span>
+        <h3>Launch, and worlds of your own</h3>
+        <p>Public launch. Author your own worlds and share them, worlds from published books sold by their authors, then voice and generated images.</p>
+      </div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="dark" id="support">
+  <div class="wrap">
+    <p class="eyebrow">Help build it</p>
+    <h2>Support PSE</h2>
+    <div class="two">
+      <div class="panel">
+        <h3>Patreon</h3>
+        <p>A Patreon page is coming soon for anyone who wants to back the build. Supporters will help cover AI running costs and development time, with behind-the-scenes posts as each milestone lands.</p>
+        <span class="soon">Coming soon</span>
+        <p class="note" style="color:#8F9AA6">Watch the <a class="link" href="updates.html">Updates</a> page for when it opens.</p>
+      </div>
+      <div class="panel">
+        <h3>Investors</h3>
+        <p>PSE is a platform that keeps AI storytelling consistent with a world’s facts. If you invest in early-stage companies and would like to know more, ask for the pitch deck.</p>
+        <a class="btn" href="mailto:persistentstoryengine@gmail.com?subject=Pitch%20deck%20request%20-%20Persistent%20Story%20Engine">Request the pitch deck</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Persistent Story Engine · <a href="mailto:persistentstoryengine@gmail.com">persistentstoryengine@gmail.com</a> · <a href="updates.html">Updates</a> · <a href="signup.html">Sign up</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
