@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Persistent Story Engine</title>
+<meta name="description" content="Persistent Story Engine: the AI tells the story, the engine decides what's true. A persistent world platform that keeps AI storytelling consistent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#121922;--panel:#1E2833;--paper:#F3EEE3;--card:#FBF8F2;--gold:#C9A04F;--gold-dk:#7A5C1C;--muted:#C9D2DC;--grey:#4A5260;--line:#E1D8C6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:#1E2530;font-family:'IBM Plex Sans',Arial,sans-serif;font-size:18px;line-height:1.6}
+  h1,h2,h3{font-family:'EB Garamond',Georgia,serif;font-weight:600;line-height:1.1}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  .eyebrow{font-size:14px;letter-spacing:3px;text-transform:uppercase;font-weight:600}
+  header{background:radial-gradient(ellipse at 30% 40%,#1C2633,var(--ink));color:var(--paper);padding:96px 0 88px}
+  header .eyebrow{color:var(--gold)}
+  header h1{font-size:clamp(40px,7vw,76px);margin:18px 0 24px}
+  header h1 span{color:var(--gold)}
+  header p{color:var(--muted);font-size:20px;max-width:720px}
+  .btn{display:inline-block;margin-top:32px;padding:14px 26px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;border-radius:8px;font-weight:600}
+  .btn:hover{background:var(--gold);color:var(--ink)}
+  section{padding:80px 0}
+  section h2{font-size:clamp(32px,5vw,48px);margin:12px 0 28px}
+  section .eyebrow{color:var(--gold-dk)}
+  .video{position:relative;aspect-ratio:16/9;background:var(--panel);border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px}
+  .card h3{font-size:28px;margin-bottom:10px}
+  .card p{color:var(--grey)}
+  .dark{background:var(--panel);color:var(--paper)}
+  .dark .eyebrow{color:var(--gold)}
+  .dark p{color:var(--muted)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .big{font-family:'EB Garamond',Georgia,serif;font-size:clamp(30px,4.5vw,44px);line-height:1.2}
+  .big span{color:var(--gold)}
+  footer{background:var(--ink);color:var(--muted);padding:56px 0;text-align:center}
+  footer h2{color:var(--paper);font-size:36px;margin-bottom:12px}
+  footer a{color:var(--gold)}
+  @media (max-width:720px){.split,.grid{grid-template-columns:1fr}header{padding:64px 0}section{padding:56px 0}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Persistent Story Engine</p>
+    <h1>The AI tells the story.<br><span>The engine decides what’s true.</span></h1>
+    <p>A persistent world platform that keeps AI storytelling consistent: people, places, money, promises and memory, held by rules the AI cannot talk its way around.</p>
+    <a class="btn" href="#demo">Watch the demo</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">The problem</p>
+      <h2>AI storytellers are convincing, but they can’t be trusted with the facts</h2>
+    </div>
+    <div>
+      <p>Say “I find a bag of gold” and most AI stories hand you the gold. Names, prices and what you paid drift or vanish a few turns later. A promise in the dialogue is just words: nothing makes it happen. Without a world that remembers, a story can’t last more than a session.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">The solution</p>
+      <p class="big">The AI proposes.<br><span>The engine decides.</span></p>
+    </div>
+    <div>
+      <p>PSE keeps the world’s truth in its own records: who is where, who owns what, what was paid, what was promised. The AI reads the player, voices the characters and tells the story, but only what the engine has made true becomes part of the world.</p>
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <p class="eyebrow">The demo</p>
+    <h2>One world, the same lines, three different stories</h2>
+    <div class="video" id="reel">
+      <!-- REEL: replace this placeholder with the YouTube embed -->
+      <p>Demo reel coming soon</p>
+    </div>
+    <p style="margin-top:18px;color:var(--grey)">Recorded live on the free AI tier. A traveller takes a room at a village inn; the words typed are the same in every run, and the engine keeps every deal, coin and promise true while the story changes.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="grid">
+      <div class="card"><h3>Say anything</h3><p>No menus or scripted choices. Plain words, read and acted on.</p></div>
+      <div class="card"><h3>People with lives</h3><p>Everyone you meet has a name, beliefs, goals and wants of their own, kept by the engine and used in everything they say and do.</p></div>
+      <div class="card"><h3>It lasts</h3><p>What you did yesterday is still true today, in a story built to be played for weeks.</p></div>
+      <div class="card"><h3>Your own worlds</h3><p>Set a world’s facts and the AI fills in everything missing, held to them by the engine. Share your worlds, and later play in worlds from published books.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Worlds endure. Your stories do too.</h2>
+    <p>Benton Petersen, founder · <a href="mailto:persistentstoryengine@gmail.com">persistentstoryengine@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
